@@ -1,0 +1,6 @@
+.vagrant/
+wordpress/plugins/akismet/
+wordpress/plugins/hello.php
+wordpress/themes/twentyfifteen/
+wordpress/themes/twentyfourteen/
+wordpress/themes/twentythirteen/
