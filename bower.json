@@ -1,0 +1,6 @@
+{
+  "name": "mothershipcaldonia.ch",
+  "dependencies": {
+    "normalize.css": "*"
+  }
+}

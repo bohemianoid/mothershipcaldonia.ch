@@ -1,4 +1,6 @@
 .vagrant/
+bower_components/
+node_modules/
 wordpress/plugins/akismet/
 wordpress/plugins/hello.php
 wordpress/themes/twentyfifteen/
