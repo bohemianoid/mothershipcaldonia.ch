@@ -16,7 +16,17 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <h1><span>Mother</span><span>ship</span> <span>Caldonia</span></h1>
+    </header>
+    <main>
       
+    </main>
     <?php wp_footer(); ?>
   </body>
 </html>

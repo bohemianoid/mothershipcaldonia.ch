@@ -5,9 +5,11 @@
     "type": "git",
     "url": "https://github.com/simonroth/mothershipcaldonia.ch.git"
   },
+  "license": "UNLICENSED",
   "devDependencies": {
     "gulp": "*",
     "gulp-rename": "*",
-    "gulp-sass": "*"
+    "gulp-sass": "*",
+    "gulp-autoprefixer": "*"
   }
 }
