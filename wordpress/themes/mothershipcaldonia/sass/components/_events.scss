@@ -1,0 +1,36 @@
+.events {
+
+}
+
+.events__year {
+  float: right;
+  padding: 0.4em 0.7em 0.2em;
+  color: white;
+  background-color: black;
+}
+
+.event {
+  float: left;
+  width: 100%;
+  padding-bottom: 1.5em;
+  border-top: 0.2em solid black;
+}
+
+.event__title {
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  font: normal 600 1.5em/1.1 $open-sans;
+  text-transform: uppercase;
+}
+
+.event__meta {
+  margin-top: 0;
+  margin-bottom: 1.3em;
+  line-height: 1.4
+}
+
+.event__description {
+  margin-top: 0;
+  margin-bottom: 1.3em;
+  font: normal 400 1em/1.5 $open-sans;
+}

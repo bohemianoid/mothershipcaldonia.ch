@@ -20,7 +20,8 @@ add_action( 'after_setup_theme', 'mc_setup' );
  * Font URLs function.
  */
 function mc_fonts_url() {
-  $font_families[] = 'Oswald';
+  $font_families[] = 'Oswald:700';
+  $font_families[] = 'Open Sans:600,400';
   $font_families[] = 'PT Mono';
 
   $query_args = array(
@@ -32,13 +33,18 @@ function mc_fonts_url() {
   return esc_url_raw( $fonts_url );
 }
 
-
 /**
  * Enqueue scripts and styles.
  */
 function mc_scripts() {
   wp_enqueue_style( 'mc-fonts', mc_fonts_url(), array(), null );
 
+  wp_enqueue_style( 'mc-icons', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), null );
+
   wp_enqueue_style( 'mc-style', get_stylesheet_uri(), array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'mc_scripts' );
+
+/*
+ * Easter egg
+ */

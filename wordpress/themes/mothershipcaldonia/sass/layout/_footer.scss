@@ -1,0 +1,15 @@
+footer {
+  width: 92%;
+  margin: 0 auto 1em;
+  font: normal 400 0.7em/1 $pt-mono;
+  color: $silver-sand;
+  text-align: center;
+}
+
+.fa-heart {
+  color: $flamingo;
+}
+
+a:hover .fa-heart {
+  color: rgba($flamingo, 0.6);
+}

@@ -1,0 +1,61 @@
+header {
+  width: 92%;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+  margin: 1em 0;
+  text-align: right;
+  text-transform: uppercase;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li:before {
+    margin-right: 2em;
+    content: '>';
+  }
+}
+
+.band-name {
+  float: left;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font: normal 700 17vw/1 $oswald;
+  color: $monochrome;
+  text-transform: uppercase;
+}
+
+.band-name__block {
+  display: inherit;
+}
+
+.band-name__block--left-aligned {
+  text-align: left;
+}
+
+.band-name__block--centered {
+  text-align: center;
+}
+
+.band-name__block--right-aligned {
+  text-align: right;
+}
+
+.band-name__block--hyphenated {
+  position: relative;
+}
+
+.band-name__block--hyphenated::after {
+  position: absolute;
+  top: 0.6em;
+  width: 0.8em;
+  height: 0.1em;
+  content: '';
+  background-color: $monochrome;
+}

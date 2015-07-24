@@ -1,3 +1,16 @@
+$base-font-style:   normal;
+$base-font-weight:  400;
+$base-font-size:    1em;
+$base-line-height:  1;
+$base-font-family:  $pt-mono;
+$base-font-color:   black;
+
 body {
-  font-family: $pt-mono;
+  font: $base-font-style $base-font-weight $base-font-size/$base-line-height $base-font-family;
+  color: $base-font-color;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
