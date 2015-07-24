@@ -8,6 +8,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "gulp": "*",
+    "browser-sync": "*",
     "gulp-rename": "*",
     "gulp-sass": "*",
     "gulp-autoprefixer": "*"

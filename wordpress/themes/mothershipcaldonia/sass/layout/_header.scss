@@ -1,33 +1,34 @@
 header {
+  position: relative;
   width: 92%;
-  margin: 0 auto;
+  margin: 13vh auto;
 }
 
 nav {
-  float: right;
-  margin: 1em 0;
-  text-align: right;
-  text-transform: uppercase;
+  position: absolute;
+  top: 17vw;
+  right: 0;
+  z-index: 1;
 
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+   ul {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+   }
 
-  li:before {
-    margin-right: 2em;
-    content: '>';
-  }
+   li a {
+     display: inline-block;
+     padding: 0.3em 0;
+     font: normal 400 6vw/1 $pt-mono;
+     text-transform: uppercase;
+   }
 }
 
 .band-name {
-  float: left;
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
   font: normal 700 17vw/1 $oswald;
-  color: $monochrome;
+  color: $sherpa-blue;
   text-transform: uppercase;
 }
 
@@ -57,5 +58,5 @@ nav {
   width: 0.8em;
   height: 0.1em;
   content: '';
-  background-color: $monochrome;
+  background-color: $sherpa-blue;
 }

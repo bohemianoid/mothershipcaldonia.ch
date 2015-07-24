@@ -377,7 +377,7 @@ th {
   padding: 0; }
 
 body {
-  font: normal 400 1em "PT Mono", monospace;
+  font: normal 400 1em "Open Sans", sans-serif;
   color: black; }
 
 a {
@@ -385,27 +385,28 @@ a {
   text-decoration: none; }
 
 header {
+  position: relative;
   width: 92%;
-  margin: 0 auto; }
+  margin: 13vh auto; }
 
 nav {
-  float: right;
-  margin: 1em 0;
-  text-align: right;
-  text-transform: uppercase; }
+  position: absolute;
+  top: 17vw;
+  right: 0;
+  z-index: 1; }
   nav ul {
     padding: 0;
     margin: 0;
     list-style: none; }
-  nav li:before {
-    margin-right: 2em;
-    content: '>'; }
+  nav li a {
+    display: inline-block;
+    padding: 0.3em 0;
+    font: normal 400 6vw/1 "PT Mono", monospace;
+    text-transform: uppercase; }
 
 .band-name {
-  float: left;
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
   font: normal 700 17vw/1 "Oswald", sans-serif;
   color: #00494d;
   text-transform: uppercase; }
@@ -435,7 +436,7 @@ nav {
 
 main {
   width: 92%;
-  margin: 2em auto 8em; }
+  margin: 0 auto; }
 
 footer {
   width: 92%;
@@ -449,6 +450,19 @@ footer {
 
 a:hover .fa-heart {
   color: rgba(239, 72, 54, 0.6); }
+
+article {
+  border-top: 0.2em solid black; }
+  article h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    font: normal 600 1.5em/1.1 "Open Sans", sans-serif;
+    text-transform: uppercase; }
+  article p {
+    margin-top: 0.45em;
+    font: normal 400 1em/1.5 "Open Sans", sans-serif; }
+  article a {
+    border-bottom: 0.1em solid black; }
 
 .events__year {
   float: right;

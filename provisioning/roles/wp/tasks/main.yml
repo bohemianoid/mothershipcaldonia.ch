@@ -36,4 +36,4 @@
   template:   src=wp-config-sample.php.j2 dest=/srv/wordpress/wp-config.php
 
 - name:       change ownership of wordpress
-  file:       path=/srv/wordpress owner=apache group=apache state=directory recurse=yes
+  file:       path=/srv/wordpress owner=vagrant group=vagrant state=directory recurse=yes
