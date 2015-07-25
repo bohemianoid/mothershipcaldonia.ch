@@ -16,7 +16,10 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="clearfix">
+    <div>
+
+    </div>
+    <header>
       <nav>
         <ul>
           <li><a href="#">Kontakt</a></li>

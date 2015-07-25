@@ -3,14 +3,23 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonroth/mothershipcaldonia.ch.git"
+    "url":  "https://github.com/simonroth/mothershipcaldonia.ch.git"
   },
   "license": "UNLICENSED",
   "devDependencies": {
-    "gulp": "*",
-    "browser-sync": "*",
-    "gulp-rename": "*",
-    "gulp-sass": "*",
-    "gulp-autoprefixer": "*"
+    "gulp":              "*",
+    "gulp-util":         "*",
+    "gulp-if":           "*",
+    "browser-sync":      "*",
+    "gulp-flatten":      "*",
+    "gulp-rename":       "*",
+    "gulp-sass":         "*",
+    "gulp-autoprefixer": "*",
+    "gulp-csso":         "*",
+    "gulp-recess":       "*",
+    "gulp-coffee":       "*",
+    "gulp-concat":       "*",
+    "gulp-uglify":       "*",
+    "gulp-modernizr":    "*"
   }
 }

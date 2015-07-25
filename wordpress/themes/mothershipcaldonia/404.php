@@ -16,7 +16,12 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="clearfix">
+    <button class="overlay__button overlay__button--open" id="js-overlay-open" type="button">Menu</button>
+    <header>
+      <h1 class="band-name"><span class="band-name__block band-name__block--left-aligned band-name__block--hyphenated">Mother</span><span class="band-name__block band-name__block--centered">404</span> <span class="band-name__block band-name__block--right-aligned">Caldonia</span></h1>
+    </header>
+    <div class="overlay overlay--slidedown" id="js-overlay">
+      <button class="overlay__button overlay__button--close" id="js-overlay-close" type="button">Schliessen</button>
       <?php wp_nav_menu( array(
         'theme_location' => 'primary',
         'container' => 'nav',
@@ -24,8 +29,7 @@
         'menu_class' => 'nav-primary__menu',
         'menu_id' => 'primary'
       ) ); ?>
-      <h1 class="band-name"><span class="band-name__block band-name__block--left-aligned band-name__block--hyphenated">Mother</span><span class="band-name__block band-name__block--centered">404</span> <span class="band-name__block band-name__block--right-aligned">Caldonia</span></h1>
-    </header>
+    </div>
     <main>
       <section>
         <article>

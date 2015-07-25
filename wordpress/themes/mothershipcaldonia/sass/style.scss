@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Mothership Caldonia
 Author: Simon Roth
 Author URI: http://simonroth.ch
@@ -20,5 +20,6 @@ Version: 0.1.0
   'layout/footer';
 
 @import
+  'components/overlay',
   'components/articles',
   'components/events';

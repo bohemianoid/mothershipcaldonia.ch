@@ -45,6 +45,10 @@ function mc_scripts() {
   wp_enqueue_style( 'mc-icons', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), null );
 
   wp_enqueue_style( 'mc-style', get_stylesheet_uri(), array(), null );
+
+  wp_enqueue_script( 'mc-modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array(), null, true );
+
+  wp_enqueue_script( 'mc-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'mc_scripts' );
 
