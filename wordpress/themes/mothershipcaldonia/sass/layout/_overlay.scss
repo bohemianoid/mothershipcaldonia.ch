@@ -26,5 +26,12 @@ body.is-locked {
 }
 
 .overlay__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+}
 
+.overlay__footer {
+  border-top: 0.2em solid black;
 }

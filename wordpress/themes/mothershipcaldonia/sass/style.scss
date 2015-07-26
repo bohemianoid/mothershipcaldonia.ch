@@ -16,10 +16,12 @@ Version: 0.1.0
 
 @import
   'layout/header',
+  'layout/overlay',
+  'layout/nav-overlay',
   'layout/main',
   'layout/footer';
 
 @import
-  'components/overlay',
+  'components/buttons',
   'components/articles',
   'components/events';

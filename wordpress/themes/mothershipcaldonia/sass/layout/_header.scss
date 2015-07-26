@@ -1,4 +1,5 @@
 header {
+  position: relative;
   width: 92%;
   margin: 13vh auto;
 }
@@ -31,11 +32,19 @@ header {
   position: relative;
 }
 
-.band-name__block--hyphenated::after {
+// .band-name__block--hyphenated::after {
+//   position: absolute;
+//   top: 0.6em;
+//   width: 0.8em;
+//   height: 0.1em;
+//   background-color: $sherpa-blue;
+//   content: '';
+// }
+
+.header__button {
   position: absolute;
-  top: 0.6em;
-  width: 0.8em;
-  height: 0.1em;
-  background-color: $sherpa-blue;
-  content: '';
+  top: 0;
+  right: 0;
+  z-index: 1;
+  text-transform: uppercase;
 }

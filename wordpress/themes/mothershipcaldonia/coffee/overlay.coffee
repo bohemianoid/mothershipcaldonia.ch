@@ -1,7 +1,7 @@
 body     = document.body
-btnOpen  = document.getElementById 'js-overlay-open'
+btnOpen  = document.getElementById 'js-open-overlay'
 overlay  = document.getElementById 'js-overlay'
-btnClose = document.getElementById 'js-overlay-close'
+btnClose = document.getElementById 'js-close-overlay'
 
 transEndEventNames =
   'WebkitTransition': 'webkitTransitionEnd',
