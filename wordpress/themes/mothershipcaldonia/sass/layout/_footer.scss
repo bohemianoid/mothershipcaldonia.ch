@@ -1,15 +1,20 @@
-// footer {
-//   width: 92%;
-//   margin: 0 auto 1em;
-//   font: normal 400 0.7em/1 $pt-mono;
-//   color: $silver-sand;
-//   text-align: center;
-// }
-//
-// .fa-heart {
-//   color: $flamingo;
-// }
-//
-// a:hover .fa-heart {
-//   color: rgba($flamingo, 0.6);
-// }
+.made-with {
+  width: 92%;
+  margin: 13vh auto 1em;
+  font-family: $pt-mono;
+  font-size: 0.7em;
+  color: $silver-sand;
+  text-align: center;
+
+  a {
+    border-bottom: none;
+  }
+}
+
+.fa-heart {
+  color: $flamingo;
+
+  a:hover & {
+    color: rgba($flamingo, 0.6);
+  }
+}

@@ -3,9 +3,7 @@
  * @package Mothership Caldonia
  */
 
-?>
-
-<!doctype html>
+?><!doctype html>
 <html class="no-js" lang="de">
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -18,7 +16,7 @@
   <body <?php body_class(); ?>>
     <header>
       <button class="header__button button--link" id="js-open-overlay" type="button"><span class="fa fa-angle-double-down icon-push"></span>Menu</button>
-      <h1 class="header__band-name"><span class="band-name__block band-name__block--left-aligned">Mother</span><span class="band-name__block band-name__block--centered">404</span> <span class="band-name__block band-name__block--right-aligned">Caldonia</span></h1>
+      <h1 class="header__band-name"><span class="band-name__block band-name__block--left-aligned">Mother</span><span class="band-name__block band-name__block--centered"><?php echo !is_404() ? 'Ship' : '404'?></span> <span class="band-name__block band-name__block--right-aligned">Caldonia</span></h1>
     </header>
     <div class="overlay overlay--slidedown" id="js-overlay">
       <button class="overlay__button button--link" id="js-close-overlay" type="button"><span class="fa fa-angle-double-up"></span><span class="visuallyhidden">Schliessen</span></button>
@@ -32,17 +30,7 @@
       <footer class="overlay__footer">
         <ul class="social social--horizontal">
           <li><a href="#">Facebook</a></li>
+          <li><a href="#">Soundlcoud</a></li>
         </ul>
       </footer>
     </div>
-    <main>
-      <section>
-        <article>
-          <h2>Nicht gefunden</h2>
-          <p>Die angeforderte Seite existiert nicht. Weiter zur <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Startseite</a>.</p>
-        </article>
-      </section>
-    </main>
-  <?php wp_footer(); ?>
-  </body>
-</html>

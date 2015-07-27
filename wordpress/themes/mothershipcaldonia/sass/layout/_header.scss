@@ -7,9 +7,16 @@ header {
 .header__band-name {
   margin-top: 0;
   margin-bottom: 0;
-  font: normal 700 17vw/1 $oswald;
+  font: 700 17vw/1 $oswald;
   color: $sherpa-blue;
   text-transform: uppercase;
+
+  @media screen and (min-width: 52.9em) {
+    width: 5.4em;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 9em;
+  }
 }
 
 .band-name__block {

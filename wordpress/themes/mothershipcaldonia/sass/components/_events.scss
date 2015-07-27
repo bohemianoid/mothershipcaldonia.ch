@@ -2,35 +2,59 @@
 
 }
 
+.events--aside {
+  display: none;
+
+  @media screen and (min-width: 40em) {
+    position: absolute;
+    top: -18em;
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
 .events__year {
-  float: right;
+  float: left;
   padding: 0.4em 0.7em 0.2em;
   color: white;
+  font-family: $pt-mono;
   background-color: black;
 }
 
-.event {
+.events__calendar {
   float: left;
   width: 100%;
+}
+
+.calendar__gutter {
+  display: none;
+
+  @media screen and (min-width: 40em) {
+    display: block;
+    width: 2%;
+  }
+}
+
+.event {
+  width: 100%;
   padding-bottom: 1.5em;
-  border-top: 0.2em solid black;
+
+  @media screen and (min-width: 40em) {
+    width: 23.5%;
+  }
 }
 
 .event__title {
-  margin-top: 0.5em;
-  margin-bottom: 0.3em;
-  font: normal 600 1.5em/1.1 $open-sans;
-  text-transform: uppercase;
+
 }
 
 .event__meta {
-  margin-top: 0;
   margin-bottom: 1.3em;
-  line-height: 1.4
+  font-family: $pt-mono;
+  line-height: 1.4;
 }
 
 .event__description {
-  margin-top: 0;
   margin-bottom: 1.3em;
-  font: normal 400 1em/1.5 $open-sans;
 }

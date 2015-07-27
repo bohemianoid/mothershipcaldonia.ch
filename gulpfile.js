@@ -48,7 +48,9 @@ gulp.task('recess', function() {
 gulp.task('scripts', function() {
   gulp.src([
     'bower_components/classie/classie.js',
-    'wordpress/themes/mothershipcaldonia/coffee/overlay.coffee'
+    'bower_components/masonry/dist/masonry.pkgd.js',
+    'wordpress/themes/mothershipcaldonia/coffee/overlay.coffee',
+    'wordpress/themes/mothershipcaldonia/coffee/masonry.coffee'
   ])
     .pipe(gIf(/[.]coffee$/, coffee()).on('error', gUtil.log))
     .pipe(concat('scripts.js'))

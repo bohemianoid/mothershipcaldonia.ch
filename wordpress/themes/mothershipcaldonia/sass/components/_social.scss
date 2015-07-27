@@ -3,8 +3,27 @@
   margin: 0;
   font: normal 400 1em/1 $pt-mono;
   list-style: none;
+
+  li a {
+    border-bottom: none;
+  }
 }
 
 .social--horizontal {
+  display: inline-block;
 
+  li {
+    float: left;
+
+    &::before {
+      margin: 0 0.6em;
+      content: '//';
+    }
+  }
+
+  li:first-child::before {
+    margin-right: 0;
+    margin-left: 0;
+    content: none;
+  }
 }

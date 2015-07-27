@@ -8,7 +8,7 @@ body.is-locked {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: 9;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   text-align: center;
@@ -19,12 +19,12 @@ body.is-locked {
   visibility: hidden;
   transform: translateY(-100%);
   transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
-}
 
-.overlay--slidedown.is-opened {
-  visibility: visible;
-  transform: translateY(0);
-  transition: transform 0.4s ease-in-out;
+  &.is-opened {
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
+  }
 }
 
 .overlay__button {
@@ -36,6 +36,10 @@ body.is-locked {
 .overlay__nav {
   width: 92%;
   margin: 14vh auto 35vh;
+
+  @media screen and (min-width: 52.6em) {
+    width: 48.4em;
+  }
 }
 
 .overlay__footer {
