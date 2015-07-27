@@ -17,11 +17,12 @@ Version: 0.1.0
 @import
   'layout/header',
   'layout/overlay',
-  'layout/nav-overlay',
+  'layout/nav',
   'layout/main',
   'layout/footer';
 
 @import
   'components/buttons',
+  'components/social',
   'components/articles',
   'components/events';

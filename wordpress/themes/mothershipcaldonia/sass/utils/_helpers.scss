@@ -1,3 +1,17 @@
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.icon-push {
+  margin-right: 0.2em;
+}
+
 .visuallyhidden {
   position: absolute;
   width: 1px;
@@ -7,14 +21,4 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-}
-
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: '';
-}
-
-.clearfix:after {
-  clear: both;
 }

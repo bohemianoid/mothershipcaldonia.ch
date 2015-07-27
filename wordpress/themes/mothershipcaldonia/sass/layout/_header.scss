@@ -4,7 +4,7 @@ header {
   margin: 13vh auto;
 }
 
-.band-name {
+.header__band-name {
   margin-top: 0;
   margin-bottom: 0;
   font: normal 700 17vw/1 $oswald;
@@ -43,8 +43,10 @@ header {
 
 .header__button {
   position: absolute;
-  top: 0;
+  top: -3vh;
   right: 0;
   z-index: 1;
+  padding: 0.3em 0;
+  font-size: 1.4em;
   text-transform: uppercase;
 }
