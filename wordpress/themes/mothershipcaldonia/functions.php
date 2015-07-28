@@ -55,3 +55,13 @@ add_action( 'wp_enqueue_scripts', 'mc_scripts' );
 /*
  * Easter egg
  */
+ function mc_easter_egg_route() {
+   add_rewrite_rule( '^5', 'index.php?easter=egg', 'top' );
+ }
+ add_action( 'init', 'mc_easter_egg_route' );
+
+ function mc_easter_egg_var( $vars ) {
+   $vars[] = 'easter';
+   return $vars;
+ }
+ add_filter( 'query_vars', 'mc_easter_egg_var' );
