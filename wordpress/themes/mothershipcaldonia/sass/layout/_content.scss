@@ -1,0 +1,29 @@
+main {
+  position: relative;
+  width: 92%;
+  max-width: 78em;
+  margin: 0 auto;
+
+  article {
+    border-top: 0.2em solid black;
+  }
+}
+
+.content--aside {
+  margin: 0 auto;
+
+  @include respond-to('alpha') {
+    width: 48%;
+  }
+
+  @include respond-to('beta') {
+    width: 32%;
+  }
+
+  @include respond-to('gamma') {
+    position: absolute;
+    top: -18em;
+    width: 23.5%;
+    z-index: 1;
+  }
+}
