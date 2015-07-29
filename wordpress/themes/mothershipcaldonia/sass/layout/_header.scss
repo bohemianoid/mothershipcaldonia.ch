@@ -1,21 +1,23 @@
+$header-width:              92%;
+$band-name-font-size-alpha: 17vw;
+$band-name-font-size-beta:  9em;
+$header-breakpoint-alpha:   ($band-name-font-size-beta/($band-name-font-size-alpha/100vw));
+
 header {
   position: relative;
-  width: 92%;
+  width: $header-width;
   margin: 13vh auto;
 }
 
 .header__band-name {
-  margin-top: 0;
-  margin-bottom: 0;
-  font: 700 17vw/1 $oswald;
+  margin: 0 auto;
+  font: 700 #{$band-name-font-size-alpha}/1 $oswald;
   color: $sherpa-blue;
   text-transform: uppercase;
 
-  @media screen and (min-width: 52.9em) {
-    width: 5.4em;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 9em;
+  @media screen and (min-width: $header-breakpoint-alpha) {
+    width: ($header-breakpoint-alpha*($header-width/100%)/($band-name-font-size-beta/1em));
+    font-size: $band-name-font-size-beta;
   }
 }
 

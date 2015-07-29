@@ -27,8 +27,9 @@ gulp.task 'rename', ->
 # Styles
 gulp.task 'styles', ->
   gulp.src 'wordpress/themes/mothershipcaldonia/sass/**/*.scss'
-    .pipe sass()
-      .on 'error', sass.logError
+    .pipe sass
+      precision: 1
+    .on 'error', sass.logError
     .pipe autoprefixer()
     .pipe csso()
     .pipe gulp.dest 'wordpress/themes/mothershipcaldonia'
@@ -37,7 +38,9 @@ gulp.task 'styles', ->
 # RECESS
 gulp.task 'recess', ->
   gulp.src 'wordpress/themes/mothershipcaldonia/style.css'
-    .pipe recess()
+    .pipe recess
+      noOverqualifying: false
+      noUnderscores:    false
     .pipe recess.reporter()
 
 # Scripts
@@ -49,7 +52,7 @@ gulp.task 'scripts', ->
     'wordpress/themes/mothershipcaldonia/coffee/masonry.coffee'
   ]
     .pipe gIf /[.]coffee$/, coffee()
-      .on 'error', gUtil.log
+    .on 'error', gUtil.log
     .pipe concat 'scripts.js'
     .pipe uglify
       preserveComments: 'some'

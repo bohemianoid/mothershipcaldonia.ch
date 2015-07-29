@@ -10,9 +10,9 @@ body.is-locked {
   left: 0;
   z-index: 9;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   text-align: center;
   background-color: white;
+  -webkit-overflow-scrolling: touch;
 }
 
 .overlay--slidedown {
