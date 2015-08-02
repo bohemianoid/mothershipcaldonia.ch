@@ -1,7 +1,9 @@
-.nav__menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+nav {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
   li a {
     display: inline-block;

@@ -11,7 +11,7 @@ body.is-locked {
   z-index: 9;
   overflow-y: scroll;
   text-align: center;
-  background-color: white;
+  background-color: rgba(white, 0.99);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -27,22 +27,31 @@ body.is-locked {
   }
 }
 
-.overlay__main button {
+.overlay__main {
+  min-height: 100%;
+}
+
+.overlay__button {
   padding: 1em;
   font-size: 1.4em;
   text-transform: uppercase;
 }
 
-.overlay__nav {
-  width: 92%;
-  max-width: 36.3em;
-  margin: 14vh auto 35vh;
-}
-
+.overlay__nav,
 .overlay__footer {
   width: 92%;
   max-width: 36.3em;
-  padding: 0.6em 0;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.overlay__nav {
+  padding: 14vh 0 35vh;
+}
+
+.overlay__footer {
+  padding-top: 0.6em;
+  margin-top: -3.3em;
+  line-height: 1;
   border-top: 0.2em solid black;
 }

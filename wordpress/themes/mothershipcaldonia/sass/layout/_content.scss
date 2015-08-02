@@ -1,7 +1,7 @@
 main {
   position: relative;
   width: 92%;
-  max-width: 78em;
+  max-width: 63.1em;
   margin: 0 auto;
 
   article {
@@ -10,20 +10,13 @@ main {
 }
 
 .content--aside {
+  max-width: 36.3em;
   margin: 0 auto;
 
-  @include respond-to('alpha') {
-    width: 48%;
-  }
-
   @include respond-to('beta') {
-    width: 32%;
-  }
-
-  @include respond-to('gamma') {
     position: absolute;
-    top: -18em;
-    width: 23.5%;
+    top: -15.5em;
+    width: 32%;
     z-index: 1;
   }
 }

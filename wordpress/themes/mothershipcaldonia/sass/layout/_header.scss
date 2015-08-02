@@ -6,7 +6,9 @@ $header-breakpoint-alpha:   ($band-name-font-size-beta/($band-name-font-size-alp
 header {
   position: relative;
   width: $header-width;
-  margin: 13vh auto;
+  max-width: 63.1em;
+  padding: 13vh 0;
+  margin: 0 auto;
 }
 
 .header__band-name {
@@ -37,22 +39,9 @@ header {
   text-align: right;
 }
 
-.band-name__block--hyphenated {
-  position: relative;
-}
-
-// .band-name__block--hyphenated::after {
-//   position: absolute;
-//   top: 0.6em;
-//   width: 0.8em;
-//   height: 0.1em;
-//   background-color: $sherpa-blue;
-//   content: '';
-// }
-
 .header__button {
   position: absolute;
-  top: -3vh;
+  top: 8vh;
   right: 0;
   z-index: 1;
   padding: 0.3em 0;
