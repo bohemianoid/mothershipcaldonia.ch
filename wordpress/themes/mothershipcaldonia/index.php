@@ -6,12 +6,12 @@
 get_header(); ?>
 
 <main>
-  <div class="events--aside">
+  <!--<div class="events--aside">
     <article class="event">
       <h2 class="event__title"><a href="http://pff15.ch">Pfadi Folk Fest</a></h2>
       <p class="event__meta">21. August //&nbsp;Menzingen //&nbsp;21.00&nbsp;Uhr</p>
     </article>
-  </div>
+  </div>-->
   <div class="events clearfix">
     <div class="events__year">2015</div>
     <section class="events__calendar js-masonry-events">
