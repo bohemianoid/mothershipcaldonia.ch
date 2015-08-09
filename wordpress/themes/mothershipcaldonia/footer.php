@@ -8,7 +8,7 @@
   <footer class="made-with">
     <a href="http://simonroth.ch">Entwickelt mit <span class="fa fa-heart"></span><span class="visuallyhidden"> Herz</span> in Luzern</a>
   </footer>
-  <!-- Piwik
+  <!-- Piwik -->
   <script type="text/javascript">
     var _paq = _paq || [];
     _paq.push(['trackPageView']);
@@ -22,7 +22,7 @@
     })();
   </script>
   <noscript><p><img src="//piwik.mothershipcaldonia.ch/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-  End Piwik Code -->
+  <!-- End Piwik Code -->
   <?php wp_footer(); ?>
   </body>
 </html>

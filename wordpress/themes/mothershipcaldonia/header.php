@@ -8,9 +8,8 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+    <meta name="description" content="Erfrischender Sound aus Zug &ndash; mal groovy und funky, mal soulful und deep.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
@@ -33,7 +32,7 @@
       </div>
       <footer class="overlay__footer">
         <ul class="social social--horizontal">
-          <li><a href="#">Facebook</a></li>
+          <li><a href="http://facebook.com/mothershipcaldonia">Facebook</a></li>
         </ul>
       </footer>
     </div>
