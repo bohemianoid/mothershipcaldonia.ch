@@ -1,4 +1,6 @@
 RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.monochromemusic\.ch$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^monochromemusic\.ch$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^www\.mothershipcaldonia\.ch$ [NC]
 RewriteRule ^(.*)$ http://mothershipcaldonia.ch/$1 [R=301,QSA,L]
 RewriteCond %{HTTP_HOST} ^mothershipcaldonia.ch$
