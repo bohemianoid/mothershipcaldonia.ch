@@ -19,7 +19,7 @@ get_header(); ?>
         <h2 class="event__title"><a href="http://pff15.ch">Pfadi Folk Fest</a></h2>
         <p class="event__meta">21. August //&nbsp;Menzingen //&nbsp;21.00&nbsp;Uhr</p>
         <div class="event__media">
-          <iframe src="https://www.youtube.com/embed/ofycarBC33c?showinfo=0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/hIevk8-7flQ?showinfo=0" allowfullscreen></iframe>
         </div>
       </article>
     </section>
