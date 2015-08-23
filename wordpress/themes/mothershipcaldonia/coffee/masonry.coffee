@@ -2,12 +2,14 @@
 masonry
 ###
 
-events  = document.querySelector '.js-masonry-events'
+events  = document.querySelectorAll '.js-masonry-events'
 
 if events
-  masonry = new Masonry events,
-    itemSelctor:        '.event'
-    columnWidth:        '.event'
-    gutter:             '.calendar__gutter'
-    percentPosition:    true
-    transitionDuration: 0
+  for masonry in events
+    do (masonry) ->
+      new Masonry masonry,
+        itemSelctor:        '.event'
+        columnWidth:        '.event'
+        gutter:             '.calendar__gutter'
+        percentPosition:    true
+        transitionDuration: 0
