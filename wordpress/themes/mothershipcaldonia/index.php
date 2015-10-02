@@ -11,8 +11,8 @@ get_header(); ?>
     <section class="events__calendar js-masonry-events">
       <div class="calendar__gutter"></div>
       <article class="event">
-        <h2 class="event__title"><a href="http://www.chollerhalle.ch">Chollerhalle mit<br>Deep Kick</a></h2>
-        <p class="event__meta">03. Oktober //&nbsp;Zug //&nbsp;20.30&nbsp;Uhr</p>
+        <h2 class="event__title"><a href="http://www.chollerhalle.ch">ABGESAGT // Chollerhalle mit<br>Deep Kick</a></h2>
+        <p class="event__meta">03. Oktober //&nbsp;Zug</p>
       </article>
     </section>
     <div class="events__year">Vergangene Gigs</div>
