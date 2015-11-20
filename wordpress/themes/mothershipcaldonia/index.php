@@ -11,8 +11,9 @@ get_header(); ?>
     <section class="events__calendar js-masonry-events">
       <div class="calendar__gutter"></div>
       <article class="event">
-        <h2 class="event__title"><a href="http://www.chollerhalle.ch">ABGESAGT // Chollerhalle mit<br>Deep Kick</a></h2>
-        <p class="event__meta">03. Oktober //&nbsp;Zug</p>
+        <h2 class="event__title"><a href="http://www.phlu.ch/ph-luzern/aktuell/veranstaltungen/anlass/news/eventDetail/Event/benefiz/">BEnefIZ Volume V</a></h2>
+        <p class="event__meta">11. Dezember //&nbsp;Parterre Luzern //&nbsp;21.00&nbsp;Uhr</p>
+        <p class="event__description">Die Semesterend-Party für einen guten Zweck.</p>
       </article>
     </section>
     <div class="events__year">Vergangene Gigs</div>
