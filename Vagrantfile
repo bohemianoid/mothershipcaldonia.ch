@@ -12,11 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "chef/centos-6.6"
-
-  config.vm.provider "parallels" do |v, override|
-    override.vm.box = "parallels/centos-6.6"
-  end
+  config.vm.box = "bento/centos-6.7"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -26,6 +22,7 @@ Vagrant.configure(2) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # Create a private network, which allows host-only access to the machine
@@ -75,12 +72,9 @@ Vagrant.configure(2) do |config|
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/site.yml"
     ansible.groups   = {
-      "webservers" => [ "default" ],
-      "dbservers"  => [ "default" ],
-      "wpservers"  => [ "default" ]
-    }
-    ansible.extra_vars = {
-      ansible_ssh_user: "vagrant"
+      "web" => [ "default" ],
+      "db"  => [ "default" ],
+      "wp"  => [ "default" ]
     }
   end
 end

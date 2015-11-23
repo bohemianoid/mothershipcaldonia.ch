@@ -1,23 +1,20 @@
 ---
-- name:        deploy and configure webservers
-  hosts:       webservers
-  remote_user: vagrant
+- name:        deploy and configure webserver
+  hosts:       web
   sudo:        yes
 
   roles:
     - web
 
 - name:        deploy and configure databases
-  hosts:       dbservers
-  remote_user: vagrant
+  hosts:       db
   sudo:        yes
 
   roles:
     - db
 
 - name:        deploy and configure wordpress
-  hosts:       wpservers
-  remote_user: vagrant
+  hosts:       wp
   sudo:        yes
 
   roles:
