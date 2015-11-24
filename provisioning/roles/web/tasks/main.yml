@@ -7,7 +7,6 @@
 - name:     install packages
   yum:      name={{ item }} state=present
   with_items:
-    - libselinux-python
     - httpd
     - php
     - phpmyadmin
@@ -19,13 +18,10 @@
   template: src=httpd.conf.j2 dest=/etc/httpd/conf/httpd.conf
   notify:   restart httpd
 
-- name:     configure localhost
-  template: src=localhost.conf.j2 dest=/etc/httpd/conf.d/localhost.conf
+- name:     remove welcome.conf
+  file:     path=/etc/httpd/conf.d/welcome.conf state=absent
   notify:   restart httpd
 
-- name:     change ownership of session
-  file:     path=/var/lib/php/session owner=vagrant group=vagrant state=directory recurse=yes
-
-- name:     remove phpMyAdmin.conf
-  file:     path=/etc/httpd/conf.d/phpMyAdmin.conf state=absent
+- name:     configure phpMyAdmin
+  template: src=phpMyAdmin.conf.j2 dest=/etc/httpd/conf.d/phpMyAdmin.conf
   notify:   restart httpd
