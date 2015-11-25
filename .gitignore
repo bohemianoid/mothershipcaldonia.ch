@@ -1,6 +1,7 @@
 .vagrant/
 bower_components/
 node_modules/
+wordpress/plugins/advanced-custom-fields/
 wordpress/plugins/akismet/
 wordpress/plugins/hello.php
 wordpress/themes/twentyfifteen/

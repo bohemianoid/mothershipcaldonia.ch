@@ -7,7 +7,9 @@
  *
  * @package Mothership_Caldonia
  */
+
 $mc_includes = [
+  'inc/admin.php',       // Admin dashboard
   'post-types/event.php' // Event post type
 ];
 
