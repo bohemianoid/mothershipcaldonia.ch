@@ -10,12 +10,14 @@
 
 $mc_includes = [
   'inc/admin.php',       // Admin dashboard
+  'inc/setup.php',       // Theme setup
   'post-types/event.php' // Event post type
 ];
 
 foreach ($mc_includes as $file) {
   if (!$filepath = locate_template($file)) {
-    trigger_error(sprintf(__('Error locating %s for inclusion', 'mc'), $file), E_USER_ERROR);
+    trigger_error(sprintf(__('Error locating %s for inclusion', 'mc'), $file),
+                  E_USER_ERROR);
   }
   require_once $filepath;
 }

@@ -14,7 +14,7 @@
  */
 function mc_acf_symlink_fix() {
   if(function_exists('acf')) {
-    acf() -> settings['dir'] = WP_CONTENT_URL . '/plugins/advanced-custom-fields/';
+    acf()->settings['dir'] = WP_CONTENT_URL . '/plugins/advanced-custom-fields/';
   }
 }
 add_action('init', 'mc_acf_symlink_fix', 0);
