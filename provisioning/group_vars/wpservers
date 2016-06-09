@@ -1,6 +1,0 @@
----
-wp_version:     4.2.3
-wp_db_name:     wordpress
-wp_db_schema:   data/wordpress.sql
-wp_db_user:     wordpress
-wp_db_password: wordpress

@@ -1,0 +1,8 @@
+---
+- hosts: all
+  roles:
+    - global
+    - httpd
+    - mariadb
+    - php
+    - wordpress

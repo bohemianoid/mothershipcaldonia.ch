@@ -1,0 +1,51 @@
+---
+- name: httpd symlink
+  file: src=/srv/wordpress dest=/var/www/html state=link force=yes
+  become: yes
+
+- name: check directories
+  stat: path=/srv/wordpress/wp-content/{{ item }}
+  with_items:
+    - plugins
+    - themes
+  register: dir
+
+- name: create directories
+  file: path=/srv/wordpress/wp-content/{{ item.item }} state=directory
+  become: yes
+  with_items: "{{ dir.results }}"
+  when: item.stat.exists == false
+
+- name: symlink directories
+  file: src=/vagrant/dist/{{ item.item }} dest=/srv/wordpress/wp-content/{{ item.item }} state=link force=yes
+  become: yes
+  with_items: "{{ dir.results }}"
+
+- name: check version
+  uri: url=https://api.wordpress.org/core/version-check/1.7/ return_content=yes
+  register: version
+
+- name: save response
+  copy: content={{ version.json.offers[ 0 ] }} dest=~/wordpress.json
+  register: release
+
+- name: download
+  unarchive: src=https://wordpress.org/latest.tar.gz dest=/srv extra_opts="-h" copy=no
+  become: yes
+  when: release.changed
+
+- name: create database
+  mysql_db: name={{ wp_db_name }}
+  become: yes
+
+- name: create database user
+  mysql_user: name={{ wp_db_user }} password={{ wp_db_password }} priv={{ wp_db_name }}.*:ALL
+  become: yes
+
+- name: configure
+  template: src=wp-config.php.j2 dest=/srv/wordpress/wp-config.php
+  become: yes
+
+- name: change ownership and group
+  file: path=/srv/wordpress owner={{ httpd_user }} group={{ httpd_group }} recurse=yes
+  become: yes

@@ -1,8 +1,7 @@
 .vagrant/
-bower_components/
-node_modules/
-wordpress/plugins/akismet/
-wordpress/plugins/hello.php
-wordpress/themes/twentyfifteen/
-wordpress/themes/twentyfourteen/
-wordpress/themes/twentythirteen/
+ansible/site.retry
+dist/plugins/akismet/
+dist/plugins/hello.php
+dist/themes/twentyfifteen/
+dist/themes/twentyfourteen/
+dist/themes/twentysixteen/
