@@ -2,6 +2,8 @@
 ansible/site.retry
 dist/plugins/akismet/
 dist/plugins/hello.php
+dist/plugins/index.php
 dist/themes/twentyfifteen/
 dist/themes/twentyfourteen/
 dist/themes/twentysixteen/
+dist/themes/index.php
