@@ -1,0 +1,2 @@
+#!/bin/sh
+mysqldump -u {{ wp_db_user }} -p{{ wp_db_password }} {{ wp_db_name }} > /vagrant/data/{{ wp_db_name }}.sql
